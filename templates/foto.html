@@ -1,0 +1,23 @@
+<div ng-include="'templates/_nav.html'"></div>
+<main>
+	<section id="fotosHeroi">
+
+
+
+	<main class="container">
+		<div class="row">
+			<div class="input-field col 12m s12">
+	          <input placeholder="Nome" id="name" type="text" class="validate" ng-model="pesquisa.nome">
+	          <label>Nome</label>
+	        </div>						
+		</div>
+		<div class="row">
+			<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+		</div>
+	</main>
+	
+	<img  src="{{foto.src}}" alt="{{foto.nome}}" ng-repeat="foto in fotosHeroi | filter:pesquisa" title="{{foto.nome}}">
+</section>
+</main>
+
+
